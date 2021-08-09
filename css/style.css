@@ -1,0 +1,393 @@
+
+
+ @media not screen and (min-width: 1024px) and (min-height:768px){
+     body .sizeMissMath {display:block;}
+     body .container {display:none;}
+
+
+}
+
+
+@media only screen and (min-width: 1024px) and (min-height:768px) {
+
+    body .sizeMissMath {display:none;}
+    /* html {
+        scroll-behavior: smooth;
+    } */
+
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container{
+        width: 100%;
+    }
+
+
+
+    /* header */
+    header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        height: 65px;
+        z-index: 999;
+    }
+    header.on {
+        background-color:white;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    nav ul {
+        list-style-type: none; 
+        display: inline-block;
+        padding-top: 10px;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    nav li {
+        display: inline-block;
+        margin: 10px;
+    }
+    nav li a {
+        text-decoration: none;
+        padding: 0 30px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    nav li a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+    /* home */
+    #home {
+        padding-bottom: 100px;
+        
+    }
+    .home-container {
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    video {
+        width: 100%;
+    }
+
+
+
+
+    /* about */
+    #about {
+        padding: 100px 0;
+    }
+
+    .about-container {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top:20px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 700px;
+    }
+
+    .about-container .blank {
+        width: 100px;
+        height: 100%;
+        float: left;
+    }
+
+    .about-text {
+        width: 40%;
+        margin: 100px;
+        float: left;
+    
+    }
+    .size-50 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .font-20 {
+        font-size: 18px;
+    }
+    .about-img {
+        width: 600px;
+        height: 600px;
+        float: left;
+        margin: 40px 40px;
+        
+    }
+    .about-img img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+
+
+
+
+
+    /* introduction */
+    #introduction {
+        padding: 100px 0;
+    }
+
+    #introduction h4, #introduction h1 {
+        text-align: center;
+    }
+
+    #introduction h1 {
+        margin-bottom: 0;
+    }
+    .introduction-container {
+        height: 1000px;
+        padding: 120px;
+    }
+
+    .myslides {
+        width: 100%;
+        height: 100%;
+        display: none;
+        
+    }
+
+
+
+
+
+    /* learning */
+    #learning {
+        padding: 100px 0;
+    }
+    .learning-container {
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 700px;
+    }
+    #learning .text-box {
+        transform: translateX(150px);
+        display: inline-block;
+    }
+    .slide_wrapper {
+        position:relative;
+        width: 960px;
+        height: 300px;
+        margin: 30px auto;
+        overflow: hidden;
+    }
+    .slides {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        transition: left 0.5s ease-out; /* left값이 바뀌는걸확인*/
+    }
+    .slides li {
+        list-style: none;
+    }
+    /* 마지막꺼 빼고 margin 설정 */
+    .slides li:not(:last-child) {
+        float: left;
+        margin-right: 30px;
+    }
+    .controls {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .controls button {
+        background-color: darkgrey;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        /* transform: translateY(-50%); /* 자기키의 반만큼 위로*/
+    } 
+    .slides li img {
+        width: 300px;
+        height: 300px;
+
+    }
+    .slides li img.not-study{
+        opacity: 0.3;
+    }
+
+
+
+
+
+
+    /* contact */
+    #contact {
+        padding-top: 100px;
+        transform: translateY(18px);
+        height: 900px;
+        
+    }
+    .contact-container {
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-right: auto;
+        margin-left: auto;    
+        height: 100%;
+        background-image: url("/images/sunset.jpg");
+        background-position: center center;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .contact-text {
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    
+    }
+
+    .login-box {
+        position: absolute;
+        left: 40%;
+        top: 25%;
+        width: 1000px;
+        height: 400px;
+    }
+    .login-box input[type=text],.login-box input[type=password] {
+        height: 50px;
+        width: 400px;
+        border-radius: 20px;
+        margin-right: 50px;
+    }
+    .login-box input[type=text]:focus,.login-box input[type=password]:focus{
+        outline: none;
+    }
+    .logbtn-box {
+        text-align: center;
+        width: 850px;
+        margin-top: 50px;
+    }
+
+    .logbtn-box input[type=button] {
+        border-radius: 5px;
+        width: 200px;
+        height: 40px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+
+    .signup-box {
+        text-align: center;
+        width: 850px;
+        margin-top: 30px;
+    }
+
+
+    span#signup {
+        cursor: pointer;
+    }
+    span#signup:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .contact-form {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 10%;
+        background-color: #474e5d;
+        z-index: 10;
+        width: 100%;
+        height: 90%;
+
+    }
+
+    .registForm {
+        /* background-color: #fefefe; */
+        background-color: white;
+        border: 1px solid black;
+        margin: 10% auto 15% auto;
+        width: 25%;
+    }
+
+    .close {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+    }
+    .close:hover, .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+    .contact-text {
+        color: white;
+    }
+
+    .contact-text text1 {
+        margin: 0 20px;
+    }
+    .contact-text text2 {
+        margin: 0 20px;
+    }
+    .contact-text text2 h3 {
+        font-size: 20px;
+    }
+    .contact-form ul {
+        list-style-type: none;
+    }
+    .contact-form ul li {
+        margin-bottom: 50px;
+    }
+    .contact-form ul li input {
+        width: 400px;
+        height: 30px;
+    }
+    .contact-form ul li input.submit{
+        color: white;
+        background-color: royalblue;
+    }
+
+
+
+
+    /* footer */
+    .footer {
+        margin: 0;
+    }
+
+    .footer-container {
+        background-color: black;
+        height: 100px;
+        text-align:center;
+    }
+    .footer-container p {
+        color: white;
+        transform: translateY(40px);
+    }
+
+    span#management {
+        color: white;
+        cursor: pointer;
+    }
+    span#management:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+}

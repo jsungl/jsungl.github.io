@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <style>   
+        .fa {
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.5;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white !important;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white !important;
+        }
+        .fa-instagram {
+            background: #dd4b39;
+            color: white !important;
+        }
+    
+    </style>
+    <script>
+        window.addEventListener("scroll",scrollFunc);
+        $(document).ready(function(){
+                 $("a[title='home']").click(function() {
+                    $('html,body').animate({
+                        scrollTop:0
+                    },800);
+                });
+
+
+                $("a[title='about']").click(function() {
+                    $('html,body').animate({
+                        scrollTop:1100
+                    },800);
+                });
+
+                $("a[title='introduction']").click(function() {
+                    $('html,body').animate({
+                        scrollTop:2400
+                    },800);
+                });
+
+                $("a[title='learning']").click(function() {
+                    $('html,body').animate({
+                        scrollTop:3600
+                    },800);
+                });
+
+                $("a[title='contact']").click(function() {
+                    $('html,body').animate({
+                        scrollTop:4650
+                    },800);
+                });
+        });
+          
+    </script>
+</head>
+
+<body>
+    <div class="sizeMissMath">
+        <h1>Error Page</h1>
+        <h3 style="color: red;">화면사이즈가 맞지않습니다(최소화면크기:1024x768)</h3>
+        <p>관리자에게 문의 : suver72@naver.com</p>
+    </div>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul id="header-ul">
+                    <li><a href="#home" title='home' class="aa">HOME</a></li>
+                    <li><a href="#about" title='about' class="aa">ABOUT</a></li>
+                    <li><a href="#introduction" title='introduction' class="aa">FAVORITE THINGS</a></li>
+                    <li><a href="#learning" title='learning' class="aa">LEARNING</a></li>
+                    <li><a href="#contact" title='contact' class="aa">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+
+
+        <section id="home">
+            <div class="home-container">
+                <!-- <img src="images/sunset.jpg" class="check" alt=""> -->
+                <video muted autoplay loop>
+                    <source src="videos/드라이브.mp4" type="video/mp4">
+                    <strong>당신의 브라우저는 이 비디오를 지원하지 않습니다</strong>
+                  </video>
+            </div>
+        </section>
+
+
+
+
+        <section id="about">
+            <div class="about-container">
+                <div class="blank"></div>
+                <div class="about-text">
+                    <h4>01</h4>
+                    <h1 class="size-50">About Me</h1>
+                    <div class="font-20">
+                        <p>Hello, I'm Lee Jae Sung. My major is digital information engineering and I'm currently studying 
+                            java-based applied sw engineer training course at kh information educational institute
+                            after graduation.</p>
+                        <p>My goal is to be a full-stack developer, I'm also interested in mobile application development and 
+                            big data, so I'm studying additionally.</p>
+                    </div>
+                </div>
+               
+                <div class="about-img">
+                    <img src="images/selfie.jpg" class="about-img" alt="">
+                </div>
+            
+            </div>
+        </section>
+
+
+
+
+
+        <section id="introduction">
+            <h4>02</h4>
+            <h1 class="size-50">FAVORITE THINGS</h1>
+            
+            <div class="introduction-container">
+                
+                <!-- <img src="images/introduction.png" class="check" alt=""> -->
+                <img src="images/epl.png" alt="" class="myslides">
+                <img src="images/리버풀.jpg" alt="리버풀" class="myslides" >
+                <img src="images/맨유.jpg" alt="맨유" class="myslides">
+                <img src="images/맨시티.jpg" alt="맨시티" class="myslides">
+                <img src="images/토트넘_.jpg" alt="토트넘" class="myslides">
+                <img src="images/웨스트햄.jpg" alt="웨스트햄" class="myslides">
+            </div>
+        </section>
+        <script>
+            carousel();
+        </script>
+
+
+
+
+        <section id="learning">
+            <div class="learning-container">
+                <div class="text-box">
+                    <h4>03</h4>
+                    <h1 class="size-50">Learning</h1>
+                </div>
+                <div class="slide_wrapper">
+                    <ul class="slides">
+                        <li><img src="images/java300x300.png" alt=""></li>
+                        <li><img src="images/oracle300x300.png" alt=""></li>
+                        <li><img src="images/jdbc11a.jpg" alt=""></li>
+                        <li><img src="images/html5_300x300.png" alt=""></li>
+                        <li><img src="images/css3_300x300.png" alt=""></li>
+                        <li><img src="images/js300x300.png" alt=""></li>
+                        <li><img src="images/jquery300x300.jpg" alt=""></li>
+                        <li><img src="images/servlet_jsp418x300.jpg" alt=""></li>
+                        <li><img src="images/mybatis300x281.png" alt=""></li>
+                        <li><img src="images/spring300x200.png" alt=""></li>
+                        <li><img src="images/kotlin300x150.png" alt="" class="not-study"></li>
+                        <li><img src="images/R300x230.png" alt="" class="not-study"></li>
+                    </ul>
+                    
+                </div>
+                <p class="controls">                   
+                    <button type="button" class="prev">prev</button>                  
+                    <button type="button" class="next">next</button>
+                </p>
+            </div>
+        </section>
+        <script>
+            var slides = document.querySelector(".slides");
+            var slide = document.querySelectorAll(".slides li");
+            var slideWidth = 300;
+            var slideMargin = 30;
+            var currentIdx = 0;
+            var slideCount = slide.length;
+            var prevBtn = document.querySelector(".prev"),
+                nextBtn = document.querySelector(".next");
+            
+            slides.style.width = (slideWidth + slideMargin) * slideCount - slideMargin + 'px'; //숫자에 px문자를 더해줘야 style값을 확인할수있다
+    
+            function moveSlide(num) {
+                slides.style.left = -num * 330 + "px";
+                currentIdx = num;
+            }
+    
+            nextBtn.addEventListener("click",function() {
+                console.log(slideCount);
+                // nextBtn.style.backgroundColor = "black";
+                
+                if(currentIdx < slideCount - 3){
+                    moveSlide(currentIdx + 1); 
+                    console.log(currentIdx);
+                }else {
+                    moveSlide(0);
+                }
+                
+            });
+
+            nextBtn.addEventListener("mousedown",function() {
+                nextBtn.style.backgroundColor = "black";
+            });
+            nextBtn.addEventListener("mouseup",function() {
+                nextBtn.style.backgroundColor = "darkgrey";
+            });
+    
+            prevBtn.addEventListener("click",function() {
+                if(currentIdx > 0){
+                    moveSlide(currentIdx - 1); 
+                    console.log(currentIdx);
+                }else {
+                    moveSlide(slideCount - 3);
+                }
+            });
+
+            prevBtn.addEventListener("mousedown",function() {
+                prevBtn.style.backgroundColor = "black";
+            });
+            prevBtn.addEventListener("mouseup",function() {
+                prevBtn.style.backgroundColor = "darkgrey";
+            });
+            
+        </script>
+        
+        
+        
+        <section id="contact">
+            <div class="contact-container">
+
+                <div class="contact-text">
+                    <div class="text1">
+                        <h4>04</h4>
+                        <h1 class="size-50">Contact</h1>
+                    </div>
+                    <div class="text2">
+                        <h3>Mobile Phone</h3>
+                        <p>+82 10-5004-8995</p>
+                        <h3>Email</h3>
+                        <p>suver72@naver.com</p>
+                        <h3>Social Media</h3>
+                        <p>
+                            <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                            <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+                            <a href="http://www.instargram.com" class="fa fa-instagram"></a>
+                        </p>
+                        <div style="height: 50px;"></div>
+                    </div>
+                </div>
+
+
+                <div class="login-box">
+                    <form action="">
+                        <input type="text" id="loginUserId" placeholder="     your id">
+                        <input type="password" id="loginUserPwd" placeholder="     your password">
+                    </form>
+                    <div class="logbtn-box">
+                        <input type="button" value="로그인">
+                    </div>
+                    <div class="signup-box">
+                        <!-- <span id="signup">
+                            <a id="signBtn" onclick="document.getElementById('contact-form').style.display='block'">
+                                아직 회원이 아니신가요? 회원가입
+                            </a>
+                        </span> -->
+                        <p>
+                            <span id="signup" onclick="document.getElementById('contact-form').style.display='block'">
+                                아직 회원이 아니신가요? 회원가입 하러가기
+                            </span>
+                        </p>
+                    </div>    
+                </div>
+                
+
+
+
+                <div class="contact-form" id="contact-form">
+                    <span onclick="document.getElementById('contact-form').style.display='none'; document.registForm.reset();" class="close">
+                        &times;
+                    </span>
+                    <form action="" name="registForm" class="registForm">
+                        <ul>
+                            <li>
+                                <input type="text" name="userName" id="userName" placeholder="이름(최소2글자이상 한글입력)">
+                            </li>
+                            <li>
+                                <input type="email" name="userEmail" id="userEmail" placeholder="이메일(@앞에 영문자나 숫자를 포함한 4~12글자)">
+                            </li>
+                            <li>
+                                <input type="text" name="userId" id="userId" placeholder="아이디(영문자와 숫자를 포함하고 영문자로 시작하는 4~12글자)">
+                            </li>
+                            <li>
+                                <input type="password" name="userPwd" id="userPwd" placeholder="패스워드(숫자/영문자/특수문자를 각각 하나이상 포함한 8~15글자)">
+                            </li>
+                            <li>
+                                <input type="submit" value="가입" class="submit">
+                            </li>    
+                        </ul>    
+                    </form>
+
+                </div>
+
+                <script>
+                    var contactForm = document.getElementById('contact-form');
+                    window.onclick = function(e) {
+                        if(e.target == contactForm){
+                            contactForm.style.display = "none";
+                            document.registForm.reset();
+                        }
+                    }
+                
+                    document.registForm.onsubmit = function(){
+                        var userName = document.getElementById("userName");
+                        var userEmail = document.getElementById("userEmail");
+                        var userId = document.getElementById("userId");
+                        var userPwd = document.getElementById("userPwd"); 
+                    
+                    
+                        var regExp1 = /^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]{2,}$/;
+                        if(!regExpTest(regExp1,userName,"한글2글자이상 입력하세요."))
+                            return false;
+                        
+                        if(!regExpTest(/^[\w]{4,}@[\w]+(\.[\w]+){1,3}$/, userEmail, "이메일 형식에 어긋납니다."))
+                            return false;
+
+                        var regExp2 = /^[a-zA-Z][a-zA-Z\d]{3,11}$/;
+                        var regExp3 = /[0-9]/;
+                        if(!regExpTest(regExp2,userId,"아이디는 영문자로 시작하는 4~12글자입니다."))
+                            return false;
+                        if(!regExpTest(regExp3,userId,"아이디는 숫자를 하나이상 포함하세요."))
+                            return false;
+                        
+
+                        var regExp4 = /^.{8,15}$/;
+                        var regExp5 = /\d/;
+                        var regExp6 = /[a-zA-Z]/;
+                        var regExp7 = /[\*!&]/;
+    
+                        if(!regExpTest(regExp4, userPwd, "비밀번호는 8~15자리 숫자/문자/특수문자($!*)를 포함해야합니다.")){
+                                return false;
+                        }
+                        if(!regExpTest(regExp5, userPwd, "비밀번호는 8~15자리 숫자/문자/특수문자($!*)를 포함해야합니다.")){
+                                return false;
+                        }
+                        if(!regExpTest(regExp6, userPwd, "비밀번호는 8~15자리 숫자/문자/특수문자($!*)를 포함해야합니다.")){
+                                return false;
+                        }
+                        if(!regExpTest(regExp7, userPwd, "비밀번호는 8~15자리 숫자/문자/특수문자($!*)를 포함해야합니다.")){
+                                return false;
+                        }    
+            
+                        if(saveEntry()){
+                            alert('가입성공');
+                            return true;
+                        }
+                        
+                    }
+
+
+                    function regExpTest(regExp, el, msg){
+                        if(regExp.test(el.value))
+                            return true;
+                        //적합한 문자열이 아닌 경우
+                        alert(msg);
+                        el.value="";
+                        el.focus(); //다시 재작성할수있도록
+                        return false;
+                    }
+
+                    function saveEntry() {
+                        console.log("saveEntry() start");
+                        var $frm = $(document.registForm);
+                        var user = {
+                            name : $frm.find("[name=userName]").val(),
+                            email : $frm.find("[name=userEmail]").val(),
+                            userid : $frm.find("[name=userId]").val(),
+                            userpwd : $frm.find("[name=userPwd]").val()
+                        };
+                        console.log(user);
+
+                        var users = JSON.parse(localStorage.getItem("users")) || []; //앞에것이 false면(처음저장할때) 빈배열을 넣는다
+                        users.push(user);
+
+                        var jsonUsers = JSON.stringify(users); //javascript배열을 json문자열로 변환
+
+                        //localStorage에 저장
+                        localStorage.setItem("users",jsonUsers);
+
+                        //폼 전체 초기화
+                        document.registForm.reset();
+
+                        return true;
+                    }
+                    
+                </script>
+            </div>
+        </section>
+        
+    
+        <footer class="footer">
+            <div class="footer-container">
+                <p>Copyright 2021. <strong>KH정보교육원</strong>. All rights reserved.</p>
+                <p><span id="management" onclick="window.open('test.html')">회원관리</span></p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

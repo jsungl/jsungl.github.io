@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원관리</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <style>
+    @media only screen and (min-width: 1024px) and (min-height:768px) {   
+       
+        #tbl-entry {
+            border:1px solid black;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        #tbl-entry th, #tbl-entry td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+       
+    }    
+    </style>
+</head>
+<body>
+    <h1>회원목록</h1>
+    <table id="tbl-entry"></table>
+    <script>
+        var users = JSON.parse(localStorage.getItem("users")) || [];
+        console.log(users);
+        var $table = $("#tbl-entry");
+        console.log($table);
+
+        //header추가
+        $table.html("<tr><th>No</th><th>이름</th><th>이메일</th><th>아이디</th><th>비밀번호</th></tr>");
+
+        if(users.length){
+            //저장된 entry가 있는 경우
+            $.each(users,function(i, entry) {
+                var $tr = $("<tr>");
+                $tr.append("<td>" + (i+1) + "</td>")
+                    .append("<td>" + entry.name + "</td>")
+                    .append("<td>" + entry.email + "</td>")
+                    .append("<td>" + entry.userid + "</td>")
+                    .append("<td>" + entry.userpwd + "</td>")
+                    .appendTo($table);
+            })
+        }else {
+            //저장된 entry가 없는 경우(entries.length = 0 -> false)
+            $table.append("<tr><td colspan='5'>가입된 회원이 없습니다</td></tr>");
+        }
+</script>
+</body>
+</html>
